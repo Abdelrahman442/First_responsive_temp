@@ -1,0 +1,423 @@
+/*
+	1-banner
+	2-studio
+	3-people
+	4-talk
+	5-contact
+*/
+
+/* global style */
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body { font-family: 'Ubuntu', sans-serif }
+
+.container { width: 80%; margin:auto }
+
+/* ====== bannar ======= */
+
+.bannar
+{
+	height: 100vh;
+	position: relative;
+	background-color: #0009;
+}
+
+.bannar::before
+{
+	content: "";
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	z-index: -1;
+	display: block;
+	position: absolute;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-image: url(../images/video.gif);
+}
+
+/* ======= header ======= */
+
+header { padding: 25px 0; overflow: hidden }
+
+header .logo h3
+{
+	color: #fff;
+	float: left;
+	font-size: 30px;
+	font-weight: 500;
+	text-transform: capitalize;
+}
+
+header nav  { float: right }
+
+header nav ul 
+{
+	display: flex;
+	list-style: none;
+}
+
+header nav ul li { margin-left: 25px }
+
+header nav ul a
+{
+	color: #fff;
+	padding: 10px;
+	font-size: 18px;
+	position: relative;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+header nav ul a::after
+{
+	left: 0;
+	width: 0;
+	bottom: 0;
+	height: 1px;
+	content: "";
+	position: absolute;
+	transition: width 0.5s;
+	background-color: #fff;
+}
+
+header nav ul a:hover::after { width: 100% }
+
+header .icon { float: right }
+
+header .icon i 
+{ 
+	color: #fff;
+	display: none;
+	font-size: 32px;
+	padding: 7px 15px;
+	border-radius: 7px;
+}
+
+header .icon i:hover
+{
+	cursor: pointer;
+	border-left: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+}
+
+/* ====== content ====== */
+
+.bannar .content { margin-top: 200px }
+ 
+.bannar .content h1
+{
+	color: #fff; 
+	font-size: 60px;
+	line-height: 1.5;
+	font-weight: normal;
+	text-transform: capitalize;
+	font-family: 'Noto Sans JP', sans-serif;
+}
+
+.bannar .content p
+{
+	color: #999;
+	font-size: 19px;
+	margin-top: 20px;
+	margin-bottom: 40px;
+}
+
+.bannar .content a
+{
+	color: #fff;
+	font-size: 19px;
+	padding: 10px 22px;
+	text-decoration: none;
+	background-color: #4CC47D;
+}
+
+.bannar .content a:hover { opacity: 0.8 }
+
+
+/* ===== studio ====== */
+
+.studio
+{
+	padding-top: 150px;
+	padding-bottom: 70px;
+}
+
+.studio-desc
+{
+	text-align: center;
+	margin-bottom: 120px;
+}
+
+.studio-desc h3
+{
+	font-size: 19px;
+	font-weight: normal;
+	margin-bottom: 25px;
+	letter-spacing: 9px;
+	text-transform: uppercase;
+}
+
+.studio-desc p
+{
+	color: #555;
+	font-size: 30px;
+	padding: 0 100px;
+	line-height: 1.5;
+}
+
+.gallary
+{
+	display: flex;
+	flex-flow: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.gallary img
+{
+	width: 49%;
+	margin-bottom: 2%;
+}
+
+/* ===== people ===== */
+
+.people
+{
+	padding: 80px 0;
+	text-align: center;
+}
+
+.people h2
+{
+	color: #666;
+	font-size: 40px;
+	font-weight: normal;
+	margin-bottom: 80px;
+	text-transform: capitalize;
+}
+
+.people .slider
+{
+	display: flex;
+	flex-flow: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.people .slider-item  { width: 23% }
+
+.people .slider .img { position: relative; }
+
+.people .slider .img img
+{
+	width: 100%;
+	height: 300px;
+}
+
+.people .slider .img .social-icon
+{
+	position: absolute;
+	top: 0;
+	right: 0;
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity 0.4s, visibility 0.4s
+}
+
+.people .slider .img:hover .social-icon
+{
+	opacity: 1;
+	visibility: visible;
+}
+
+.people .slider .img .social-icon a
+{
+	color: #fff;
+	width: 50px;
+	display: block;
+	font-size: 17px;
+	padding: 7px 4px;
+	background-color: #000;
+}
+
+.people .slider .img .social-icon a:hover { background-color: #2594db }
+
+.people .slider .member-det
+{
+	padding: 15px 0;
+	text-transform: capitalize;
+}
+
+.people .slider .member-det span
+{
+	color: #777;
+	font-size: 15px;
+	font-weight: bold;
+	font-family: arial, tahoma;
+}
+
+.people .slider .member-det p
+{
+	font-size: 22px;
+	margin-top: 10px;
+	font-weight: bold;
+	font-family: arial, tahoma;
+}
+
+.slider .points { width: 100%; margin-top: 40px }
+
+.slider .points span
+{
+	margin: 3px; 
+	width: 10px;
+	height: 10px;
+	border-radius: 50%; 
+	display: inline-block;
+	background-color: #999;
+}
+
+.slider .points span:hover, .slider .points span.active { background-color: #555 }
+
+/* ======= talk ======= */
+
+.talk
+{
+	padding: 100px;
+	text-align: center;
+	position: relative;
+	background-color: #EFEFEFbb;
+}
+
+.talk::after
+{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-image: url(../images/talk.jpg);
+	background-size: 100% 100%;
+	z-index: -1;
+}
+
+.talk h2
+{
+	color: #666;
+	font-size: 40px;
+	font-weight: normal;
+	margin-bottom: 70px;
+	text-transform: capitalize;
+}
+
+.talk form input
+{
+	border: 0;
+	width: 24%;
+	padding: 12px;
+	font-size: 17px;
+}
+
+.talk form input[name="name"] { margin-right: 2% }
+
+.talk form input[name="subject"], .talk form textarea
+{
+	width: 50%;
+	display: block;
+	margin: 30px auto;
+}
+
+.talk form textarea
+{
+	border: 0;
+	padding: 12px;
+	height: 150px;
+	font-size: 17px;
+}
+
+.talk form input[name="submit"]
+{
+	border: 0;
+	color: #fff;
+	margin: auto;
+	width: 170px;
+	display: block;
+	font-size: 18px;
+	padding: 10px 0;
+	text-decoration: none;
+	background-color: #4CC47D;
+}
+
+
+/* ======== contact ======== */
+
+.contact .container
+{
+	display: flex;
+	flex-wrap: wrap;
+	padding-top: 90px;
+	padding-bottom: 40px;
+	justify-content: space-between;
+}
+
+.contact .item { width: 30% }
+
+.contact .item h2
+{
+	font-size: 27px;
+	font-weight: normal;
+	margin-bottom: 15px;
+}
+
+.contact .item p
+{
+	color: #999;
+	font-size: 17px;
+	line-height: 1.4;
+	margin-bottom: 20px;
+}
+
+.contact .item ul { list-style: none }
+
+.contact .item ul li
+{
+	color: #999;
+	font-size: 17px;
+	line-height: 1.4;
+	margin-bottom: 5px;
+}
+
+.contact .item ul.social-icon { padding-left: 80px }
+
+.contact .item ul.social-icon li { display: inline-block }
+
+.contact .item ul.social-icon li a
+{
+	color: #000;
+	padding: 5px;
+	font-size: 20px;
+}
+
+.contact .item ul.social-icon li a:hover { color: #2594db }
+
+/* ===== footer ====== */
+
+footer
+{
+	padding-bottom: 30px;
+}
+
+footer p
+{
+	color: #999;
+	font-size: 17px;
+	line-height: 1.4;
+	margin-bottom: 20px;
+}

@@ -1,0 +1,154 @@
+@media screen and ( max-width: 1024px )
+{
+
+	/* ====== bannar ======*/
+
+	.bannar header nav { display: none }
+
+	header .icon i { display: block; }
+
+	.bannar .content { margin-top: 150px }
+
+	.bannar .content h1 { font-size: 50px }
+
+	/* ======= studio ======*/
+
+	.studio-desc h3 { font-size: 19px; letter-spacing: 5px }
+
+	.studio-desc p { font-size: 25px; padding: 0 40px }
+
+	/* ===== people ===== */
+
+	.people .slider { justify-content: space-around }
+
+	.people .slider-item  { width: 40%; margin-bottom: 40px; }
+
+	.slider .points { margin-top: 0 }
+
+	/* ======= talk ======= */
+
+	.talk form input { width: 40% }
+
+	.talk form input[name="subject"], .talk form textarea { width: 82%  }
+
+
+	/* ====== content ====== */
+
+	.contact .item { width: 40%; margin: 0 auto 40px;}
+
+
+	/* ===== footer ===== */
+
+	footer p { text-align: center; }
+}
+
+
+@media screen and ( max-width: 768px )
+{
+
+	/* ====== bannar ======= */
+
+	.bannar::before { display: none; }
+
+	.bannar { background-color: #555; height: 80vh }
+
+	header .icon i { display: block; }
+
+	.bannar .content { margin-top: 100px }
+
+	.bannar .content h1 { font-size: 45px }
+
+	/* ====== studio ====== */
+
+	.studio { padding: 60px 0 }
+
+	.studio-desc h3 { font-size: 16px; letter-spacing: 5px }
+
+	.studio-desc p { font-size: 22px; padding: 0 40px }
+
+	.studio .gallary { justify-content: center; padding: 0 }
+
+	.studio .gallary img { width: 80%; margin-bottom: 30px }
+
+	/* ===== people ===== */
+
+	.people { padding: 40px 0 }
+
+	.people h2 { font-size: 35px; }
+
+	.people .slider-item  { width: 55%; margin-bottom: 40px; }
+
+	/* ==== contact ===== */
+
+	.contact .item { width: 45% }
+
+	.contact .item ul.social-icon { padding-left: 30px }
+
+}
+
+
+@media screen and ( max-width: 452px )
+{
+
+	/* ====== bannar ======= */
+
+	.bannar { background-color: #555; height: 60vh }
+
+	header .logo h3 { font-size: 25px }
+
+	header .icon i { display: block; font-size: 23px }
+
+	.bannar .content { margin-top: 40px }
+
+	.bannar .content h1 { font-size: 32px }
+
+	.bannar .content p { font-size: 15px }
+
+	.bannar .content a { font-size: 16px; padding: 7px 10px }
+
+
+	/* ====== studio ====== */
+
+	.studio { padding: 60px 0 }
+
+	.studio-desc h3 { font-size: 12px; letter-spacing: 2px }
+
+	.studio-desc p { font-size: 17px; padding: 0 }
+
+	.studio .gallary { justify-content: center; padding: 0 }
+
+	.studio .gallary img { width: 100%; margin-bottom: 20px }
+
+	/* ===== people ===== */
+
+	.people h2 { font-size: 35px; }
+
+	.people .slider-item  { width: 90%; margin-bottom: 40px }
+
+	/* ===== talk ======*/
+
+	.talk { padding: 50px }
+
+	.talk::after { display: none }
+
+	.talk h2 { font-size: 35px }
+
+	.talk form input, .talk form input[name="subject"], .talk form textarea 
+
+	{ display: block; width: 100%; margin: 15px 0; }
+
+	.talk form input[name="submit"] { width: 150px; font-size: 17px; margin-top: 20px }
+
+
+	/* ==== contact ===== */
+
+	.contact .item { width: 51%; margin: 20px 40px }
+
+	.contact .item h2 { font-size: 25px }
+
+	.contact .item p, .contact .item li { font-size: 15px; }
+
+	.contact .item ul.social-icon { padding-left: 0 }
+
+}
+
